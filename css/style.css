@@ -3489,3 +3489,6 @@ ol {
     font-size: 24px;
   }
 }
+.product__item a:hover {
+  color: #7fad39;
+}
