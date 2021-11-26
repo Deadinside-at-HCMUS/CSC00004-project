@@ -47,7 +47,7 @@
     <link rel="stylesheet" href="css/checkout.css">
 </head>
 
-<body class = "bg-light">
+<body>
     <!-- Page Preloder -->
     <!-- <div id="preloder">
         <div class="loader"></div>
@@ -122,7 +122,8 @@
     <!-- Header section end -->
 
     <!-- Check out start -->
-    <div class="container">    
+    <div class = "checkout__form">
+      <div class="container">    
         <div class="py-5 text-center">
           <h2>Checkout form</h2>
         </div>
@@ -226,10 +227,10 @@
                 </div>
               </div>
       
-              <div class="mb-3">
+              <!-- <div class="mb-3">
                 <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
                 <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-              </div>
+              </div> -->
       
               <div class="row">
                 <div class="col-md-5 mb-3">
@@ -261,7 +262,7 @@
                   </div>
                 </div>
               </div>
-              <hr class="mb-4">
+              <!-- <hr class="mb-4">
               <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="same-address">
                 <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
@@ -269,21 +270,20 @@
               <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="save-info">
                 <label class="custom-control-label" for="save-info">Save this information for next time</label>
-              </div>
-              <hr class="mb-4">
+              </div> -->
+              <!-- <hr class="mb-4"> -->
       
               <h4 class="mb-3">Payment</h4>
-      
               <div class="d-block my-3">
                 <div class="custom-control custom-radio">
                   <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
-                  <label class="custom-control-label" for="credit">Credit card</label>
+                  <label class="custom-control-label" for="credit">Cash on delivery (COD)</label>
                 </div>
                 <div class="custom-control custom-radio">
                   <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
-                  <label class="custom-control-label" for="debit">Debit card</label>
+                  <label class="custom-control-label" for="debit">Credit card</label>
                 </div>
-                <div class="custom-control custom-radio">
+                <!-- <div class="custom-control custom-radio">
                   <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
                   <label class="custom-control-label" for="paypal">PayPal</label>
                 </div>
@@ -321,11 +321,13 @@
                   </div>
                 </div>
               </div>
-              <hr class="mb-4">
+              <hr class="mb-4"> -->
+              <br/>
               <button class="btn btn-success btn-lg btn-block" type="submit">Continue to checkout</button>
             </form>
           </div>
         </div>
+      </div>
     </div>    
     <!-- Check out end -->
     
