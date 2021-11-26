@@ -251,7 +251,7 @@ iframe {
 
 .focus-input100::after {
   content: attr(data-symbol);
-  font-family: Material-Design-Iconic-Font;
+  font-family: Roboto;
   color: #adadad;
   font-size: 22px;
 
@@ -422,7 +422,7 @@ iframe {
 
 .alert-validate::after {
   content: "\f06a";
-  font-family: FontAwesome;
+  font-family: Roboto;
   display: block;
   position: absolute;
   color: #c80000;
