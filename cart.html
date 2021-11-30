@@ -209,42 +209,46 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <!-- Name -->
-                                    <td class="shoping__cart__item">
-                                        <img src="img/shoes/1.jpg" width="70"? alt="">
-                                        <h5>Converse Green</h5>
-                                    </td>
-                                    <!-- Price -->
-                                    <td class="shoping__cart__price">
-                                        $100
-                                    </td>
-                                    <!-- Size -->
-                                    <td class="shoping__cart__price">
-                                        41
-                                    </td>
-                                    <!-- Quantity -->
-                                    <td class="shoping__cart__quantity">
-                                        <form action="" method="post">
-                                        <div class="quantity">
-                                            <div class="pro-qty">
-                                                <input type="hidden" name="cartId"min = 0 value=""/>
-                                                <input type="number" name="quantity"min = 0 value="1"/>
-                                            </div>
-                                        </div>
-                                        <!-- <input class="styling" type="submit" name="submitupdate" value="Update"/> -->
-                                        </form>
-                                    </td>
-
-                                    <td class="shoping__cart__total">
-                                        $100
-                                    </td>
-                                    <td class="shoping__cart__item__close">
-                                        <!-- <span class="icon_close"></span> -->
-                                        <!-- <td><a onclick ="return confirm('Bạn có muốn xóa?')" href="?delid">X</a></td> -->
-                                        <button class="btn btn-danger" type="button">Xóa</button>
-                                    </td>
-                                </tr>
+                                <div class="cart-items">
+                                    <div class="cart-row">
+                                        <tr>
+                                            <!-- Name -->
+                                            <td class="shoping__cart__item">
+                                                <img src="img/shoes/1.jpg" width="70"? alt="">
+                                                <h5>Converse Green</h5>
+                                            </td>
+                                            <!-- Price -->
+                                            <td class="shoping__cart__price" id="ticket_price">
+                                                100
+                                            </td>
+                                            <!-- Size -->
+                                            <td class="shoping__cart__size">
+                                                41
+                                            </td>
+                                            <!-- Quantity -->
+                                            <td class="shoping__cart__quantity">
+                                                <form action="" method="post">
+                                                <div class="quantity">
+                                                    <div class="pro-qty">
+                                                        <input type="hidden" name="cartId"min = 0 value=""/>
+                                                        <input id = "num" type="number" name="quantity"min = 0 value="1" oninput="updatecart()"/>
+                                                    </div>
+                                                </div>
+                                                <!-- <input class="styling" type="submit" name="submitupdate" value="Update"/> -->
+                                                </form>
+                                            </td>
+        
+                                            <td class="shoping__cart__total" id="total">
+                                                100
+                                            </td>
+                                            <td class="shoping__cart__item__close">
+                                                <!-- <span class="icon_close"></span> -->
+                                                <!-- <td><a onclick ="return confirm('Bạn có muốn xóa?')" href="?delid">X</a></td> -->
+                                                <button class="btn btn-danger" type="button">Xóa</button>
+                                            </td>
+                                        </tr>
+                                    </div>
+                                </div>
                             </tbody>
                         </table>
                     </div>
@@ -267,7 +271,7 @@
                         <h5>Thanh Toán Đơn Hàng</h5>
                         <ul>
                             </td></span></li>
-                                <li>Thành Tiền<span> $100
+                                <li>Thành Tiền<span>$<span id="total-cart">100</span>
                             </td></span></li>
                         </ul>
                         <a href="./checkout.html" class="primary-btn">TIẾN HÀNH THANH TOÁN</a>
