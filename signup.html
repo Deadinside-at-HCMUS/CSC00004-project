@@ -15,22 +15,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-    <!-- Font -->
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
-
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <!-- Vendor -->
-    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-    
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
@@ -40,7 +28,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/signin-signup.css">
+    <link rel="stylesheet" href="css/sign.css" type="text/css">
 </head>
 
 <body>
@@ -116,125 +104,33 @@
     </header>
     <!-- Header section end -->
 
-
-    <!-- Hero Section Begin -->
-    <section class="hero hero-normal">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    
+    <!-- Signup section start -->
+    <div class="container">
+        <div class="signup">
+            <h2>Đăng Ký</h2>
+            <div class="signup-items">
+                <div class="input-group-lg">
+                    <p>Tên Đăng Nhập</p>
+                    <label for="formGroupExampleInput" class="form-label"></label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username">
                 </div>
-                <div class="col-lg-9">
-                    <div class="hero__search">
-                        <div class="hero__search__form">
-                      
-                            <form action="product.php" method="GET">
-                                <input type="text" name="namepro" placeholder="Bạn cần thông tin gì?">
-                                <button type="" class="site-btn">TÌM KIẾM</button>
-
-                            </form>
-                        </div>
-                        <div class="hero__search__phone">
-                            <div class="hero__search__phone__icon">
-                                <i class="fa fa-phone"></i>
-                            </div>
-                            <div class="hero__search__phone__text">
-                                <h5>0236394059</h5>
-                                <span>Hỗ trợ 24/7 </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>    
+                <div class="input-group-lg">
+                    <p>Địa Chỉ Email</p>
+                    <label for="formGroupExampleInput2" class="form-label"></label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email">
+                </div>
+                <div class="input-group-lg">
+                    <p>Mật Khẩu</p>>
+                    <label for="formGroupExampleInput2" class="form-label"></label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Password">
+                </div>
+                <button type="button" class="btn btn-success btn-lg">ĐĂNG KÝ</button>
+                <p>Already have account?</p>
+                <a href="./signin.html">SIGN IN</a>
             </div>
-        </div>
-    </section>
-    <!-- Hero Section End -->
-
-    <!-- Signin Form Begin -->
-    <div class="limiter">
-		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
-			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
-				<form class="login100-form validate-form">
-					<span class="login100-form-title p-b-49">
-						Sign up
-					</span>
-
-					<div class="wrap-input100 validate-input" data-validate = "Username is required">
-						<span class="label-input100">Username</span>
-						<input class="input100" type="text" name="username" placeholder="Type your username">
-						<span class="focus-input100" data-symbol="&#xf206;"></span>
-					</div>
-
-                    <div class="wrap-input100 validate-input m-b-23" data-validate = "Email is required">
-						<span class="label-input100">Email</span>
-						<input class="input100" type="text" name="email" placeholder="Type your email">
-						<span class="focus-input100" data-symbol="&#xf097;"></span>
-					</div>
-
-					<div class="wrap-input100 validate-input" data-validate="Password is required">
-						<span class="label-input100">Password</span>
-						<input class="input100" type="password" name="pass" placeholder="Type your password">
-						<span class="focus-input100" data-symbol="&#xf190;"></span>
-					</div>
-					
-					<!-- <div class="text-right p-t-8 p-b-31">
-						<a href="#">
-							Forgot password?
-						</a>
-					</div> -->
-					
-                    <br/>
-
-					<div class="container-login100-form-btn">
-						<div class="wrap-login100-form-btn">
-							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn">
-								Sign up
-							</button>
-						</div>
-					</div>
-
-					<div class="txt1 text-center p-t-54 p-b-20">
-						<span>
-							Already have an account?
-						</span>
-
-                        <br/>
-                        
-                        <a href="./signin.html" class="txt2">
-							Sign In
-						</a>
-					</div>
-
-					<!-- <div class="flex-c-m">
-						<a href="#" class="login100-social-item bg1">
-							<i class="fa fa-facebook"></i>
-						</a>
-
-						<a href="#" class="login100-social-item bg2">
-							<i class="fa fa-twitter"></i>
-						</a>
-
-						<a href="#" class="login100-social-item bg3">
-							<i class="fa fa-google"></i>
-						</a>
-					</div>
-
-					<div class="flex-col-c p-t-155">
-						<span class="txt1 p-b-17">
-							Or Sign Up Using
-						</span>
-
-						<a href="#" class="txt2">
-							Sign Up
-						</a>
-					</div> -->
-				</form>
-			</div>
-		</div>
-	</div>
-    <div id="dropDownSelect1"></div>
-    <!-- Signin Form End -->
+        </div>    
+    </div>
+    <!-- Signup section end -->
 
    <!-- Footer Section Start -->
    <footer class="footer spad">
@@ -293,18 +189,17 @@
         </div>
 
     </div>
-    </footer>
+</footer>
 <!-- Footer Section End -->
 
-<!-- Js Plugins -->	
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-	<script src="vendor/select2/select2.min.js"></script>
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-	<script src="js/main.js"></script>
+<!-- Js Plugins -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
