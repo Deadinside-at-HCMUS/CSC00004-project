@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/about.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 
 <body>
@@ -109,28 +110,35 @@
         <div class="member">
             <div class="container">
                 <h2>Thành Viên</h2>
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-6">
-                        <img src="./img/members/Thư.png" alt="Avatar">
+                <div class="slick-image">
+                    <div>
+                        <img src="./img/members/Thư.png" alt="Avatar" class="member-image">
                         <h4>Lê Anh Thư</h4>
+                        <h5>Project Leader</h5>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6">
-                        <img src="./img/members/Thiện.png" alt="Avatar">
+
+                    <div>
+                        <img src="./img/members/Thiện.png" alt="Avatar" class="member-image">
                         <h4>Huỳnh Đức Thiện</h4>
+                        <h5>Developer</h5>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6">
-                        <img src="./img/members/An.png" alt="Avatar">
+
+                    <div>
+                        <img src="./img/members/An.png" alt="Avatar" class="member-image">
                         <h4>Phan Thanh An</h4>
+                        <h5>Developer</h5>
                     </div>
-                </div>    
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <img src="./img/members/Phúc.png" alt="Avatar">
+
+                    <div>
+                        <img src="./img/members/Phúc.png" alt="Avatar" class="member-image">
                         <h4>Châu Hoàng Bảo Phúc</h4>
+                        <h5>Developer</h5>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <img src="./img/members/Bảo.png" alt="Avatar">
+
+                    <div>
+                        <img src="./img/members/Bảo.png" alt="Avatar" class="member-image">
                         <h4>Phạm Hồng Gia Bảo</h4>
+                        <h5>Developer</h5>
                     </div>
                 </div>
             </div>
@@ -195,7 +203,7 @@
         </div>
 
     </div>
-</footer>
+    </footer>
 <!-- Footer Section End -->
 
 <!-- Js Plugins -->
@@ -206,6 +214,33 @@
 <script src="js/jquery.slicknav.js"></script>
 <script src="js/mixitup.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/main.js"></script>
+<script>
+    $('.slick-image').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        // Prev next button
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [
+            {
+            breakpoint: 970,
+            settings: {
+            slidesToShow: 2,
+            },
+        },
+        {
+            breakpoint: 760,
+            settings: {
+            slidesToShow: 1,
+            },
+        },
+        ],
+    });
+</script>
 </body>
 </html>
