@@ -101,12 +101,12 @@ h3{
               if($get_list){
                   while($result_prod = $get_list->fetch_assoc()){
                 ?>
-            <div class="form-group">
+            <!-- <div class="form-group">
 
                 <label> Tên Sản Phẩm </label>
                 <input type="text" name="productName" class="form-control" placeholder="Enter Product" value="<?php echo $result_prod['productName'] ?>">
             </div>
-             
+              -->
              
              
             <div class="form-group">

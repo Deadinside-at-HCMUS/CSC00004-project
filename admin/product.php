@@ -95,8 +95,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['registerbtn'])){
              <div class="form-group">
               <label >Size</label>
                 <select id="size" name="size" class="form-control">
-                  
-                  <option>Select size</option>
+                    <option>Select size</option>
                 </select>
             </div>
             <div class="form-group">
@@ -257,8 +256,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['registerbtn'])){
         })
 
     });
-</script>
-<!-- /.container-fluid -->
+</script> -->
+<!-- /.container-fluid
 
 <?php
 include('includes/scripts.php');

@@ -68,7 +68,7 @@ include ("../helpers/format.php");
         
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
             <button type="submit" name="submit" class="btn btn-primary">Lưu</button>
         </div>
       </form>
@@ -105,7 +105,6 @@ include ("../helpers/format.php");
             <th width="15%">Khách Hàng </th>
             <th>Tổng Tiền</th>
             <th>Đia Chỉ</th>
-            <th>Số điện thoại</th>
             <th width="15%">Trạng Thái </th>
           </tr>
         </thead>
@@ -123,9 +122,9 @@ include ("../helpers/format.php");
             <td value="idbill" name="idbill" data-name="<?= $result['order_Id'] ?>" ><a href="billdetails.php?idbill=<?php echo $result['order_Id']?>"> <?php echo $result['order_Id'] ?></a></td>
             <td><?php echo $fm->formatDate($result['date']) ?></td>
             <td><?php echo $result['receiver'] ?></td>
-            <td>$<?php echo $fm->format_currency($result['totalprice']) ?></td>
+            <td>$<?php echo $result['totalprice'] ?></td>
             <td><?php echo $result['address'] ?></td>
-            <td><?php echo $result['phone'] ?></td>
+            
                 
             <?php
                   if ($result['status']==0) {
@@ -177,9 +176,11 @@ include ("../helpers/format.php");
             <td value="idbill" name="idbill" data-name="<?= $result['order_Id'] ?>" ><a href="billdetails.php?idbill=<?php echo $result['order_Id']?>"> <?php echo $result['order_Id'] ?></a></td>
             <td><?php echo $fm->formatDate($result['date']) ?></td>
             <td><?php echo $result['receiver'] ?></td>
-            <td>$<?php echo $fm->format_currency($result['totalprice']) ?></td>
+            <td>$<?php echo $result['totalprice'] ?></td>
             <td><?php echo $result['address'] ?></td>
-            <td><?php echo $result['phone'] ?></td>
+            <td><?php echo "0".$result['phone'] ?></td>
+
+            
                 
             <?php
                   if ($result['status']==0) {
@@ -191,14 +192,10 @@ include ("../helpers/format.php");
                   else
                       echo '<td class="text-danger">Hủy Đơn</td>';
                   ?>
-       
-                    
-               
           
             <td>
                 
       
-               
                   <input  id="edit" type="button" name="submit" class="btn btn-primary" value="Cập nhật trạng thái" data-toggle="modal" data-target="#addadminprofile">
                  
                
@@ -228,12 +225,8 @@ include ("../helpers/format.php");
       
       var currentRow = $(this).closest("tr");
       var id=currentRow.find("td:eq(0)").text();
-      // var status=currentRow.find("td:eq(5)").val(); 
       
-      // var show = id;
-      // alert(show);
       $("#test").val(id);
-      // $("#statuss").val(matp);
     });
  });
   

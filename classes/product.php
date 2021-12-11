@@ -23,10 +23,6 @@
 		}
 		public function insert_product($data,$files){
 
-			// $prodName = $this->fm->validation($prodName);
-			// $prodSize = $this->fm->validation($prodSize);
-
-
 			$productName = mysqli_real_escape_string($this->db->link, $data['productName']);
 			$brand = mysqli_real_escape_string($this->db->link, $data['brand']);
 			$category = mysqli_real_escape_string($this->db->link, $data['category']);
@@ -54,12 +50,12 @@
 				$query = "INSERT INTO tbl_product(productName, catId, brandId, size ,price, image, type,description,quantity) VALUES ('$productName','$category','$brand','$size','$price','$unique_image','$type','$description','$quantity')";
 				$result = $this->db->insert($query);
 				if($result){
-					$alert = "<span>Thêm product thành công</span>";
+					$alert = "<span>Thêm sản phẩm thành công</span>";
 					return $alert;
 
 				}
 				else{
-					$alert = "<span>Lỗi. Thêm product thất bại</span>";
+					$alert = "<span>Lỗi. Thêm sản phẩm thất bại</span>";
 					return $alert;	
 				}
 

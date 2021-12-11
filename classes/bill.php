@@ -22,6 +22,8 @@
 			$email = mysqli_real_escape_string($this->db->link, $data['email']);
 			$total = 0;
 			$session_id = session_id();
+			$qtt=Session::get("total");
+
 			$query = "SELECT * FROM tbl_cart WHERE ssId = '$session_id'";
 			$get_cart = $this->db->select($query);
 			if ($get_cart) {
@@ -33,7 +35,7 @@
 				}
 			}
 			
-			$query_order = "INSERT INTO tbl_order ( buyer, receiver, phone, email, address, totalprice,status) VALUES ('$buyerr','$name','$phone','$email','$address','$total','0')";
+			$query_order = "INSERT INTO tbl_order ( buyer, receiver, phone, email, address, totalprice,status) VALUES ('$buyerr','$name','$phone','$email','$address','$qtt','0')";
 			$insertOder = $this->db->insert($query_order);
 			return $insertOder;
 		}

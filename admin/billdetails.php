@@ -65,7 +65,7 @@ h4{
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
   <div class="card-header py-3">
-    <h6 class="m-0 font-weight-bold text-primary">BILL DETAILS 
+    <h6 class="m-0 font-weight-bold text-primary">Chi tiết đơn hàng
 
     </h6>
      <form action="" method="POST">
@@ -77,7 +77,7 @@ h4{
     <div class="table-responsive">
 
      <form action="" method="POST">
-      <h4>PRODUCT ORDER</h4>
+      <h4>Đơn hàng</h4>
       
       
         </tbody>
@@ -86,11 +86,11 @@ h4{
         <thead>
           <tr>
             
-            <th> Product name </th>
-            <th> Image </th>
+            <th> Tên sản phẩm </th>
+            <th> Hình minh hoạ </th>
             <th> Size </th>
-            <th> Quantity </th>
-            <th> Price </th>
+            <th> Số lượng </th>
+            <th> Giá </th>
           </tr>
         </thead>
         <tbody>

@@ -4,7 +4,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; NMCNTT's Team 21CLC07 HCMUS</span>
+            <span>Copyright &copy; NMCNTT 21CLC07</span>
           </div>
         </div>
       </footer>
