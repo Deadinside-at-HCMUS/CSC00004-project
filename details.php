@@ -76,11 +76,9 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Product's Package</h2>
+                        <h2>Chi tiết sản phẩm</h2>
                         <div class="breadcrumb__option">
-                            <a href="./index.html">Home</a>
-                            <a href="./index.html">Products</a>
-                            <span>Product's Package</span>
+                         
                         </div>
                     </div>
                 </div>
@@ -156,13 +154,24 @@
                                 </div>
                             </div>
                         </div>
-                       
-                        <button type="submit" class="site-btn" name="submit">ADD TO CARD</button>
+                       <style>
+                               button {
+                                    background-color: #4CAF50; /* Green */
+                                    font-weight: bold;
+                                    border: none;
+                                    color: white;
+                                    padding: 10px 20px;
+                                    text-align: center;
+                                    text-decoration: none;
+                                    font-size: 14px;
+                                }
+                       </style>
+                        <button type="submit"  name="submit">THÊM VÀO GIỎ HÀNG</button>
                         
                         <ul>
-                            <li><b>Availability</b> <span>In Stock</span></li>
-                            <li><b>Shipping</b> <span>01 day shipping. <samp>Free pickup today</samp></span></li>
-                            <li><b>Share on</b>
+                            <li><b>Tình trạng</b> <span>Còn hàng</span></li>
+                            <li><b>Giao hàng</b> <span>03 ngày <samp>Miễn phí giao hàng</samp></span></li>
+                            <li><b>Chia sẻ</b>
                                 <div class="share">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
                                     <a href="#"><i class="fa fa-twitter"></i></a>

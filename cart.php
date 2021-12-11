@@ -239,7 +239,25 @@
                             <h5>Mã giảm giá</h5>
                             <form action="" method="post">
                                 <input type="text" name="codediscount" placeholder="Nhập mã giảm giá">
-                                <button type="submit" name="discount" class="site-btn">APPLY</button>
+                            <style>
+                               .btn-txt {
+                                    background-color: #4CAF50; /* Green */
+                                    font-weight: bold;
+                                    border: none;
+                                    color: white;
+                                    padding: 10px 20px;
+                                    text-align: center;
+                                    text-decoration: none;
+                                }
+                            </style>
+                                <button type="submit" style="
+                                font-size: 14px;  
+                                background-color: #7FAD39;
+                                font-weight: bold;
+                                padding: 12px 15px;
+                                color: #fff;
+                                border: none;" 
+                                name="discount">ÁP DỤNG</button>
                             </form>
                         </div>
                     </div>
